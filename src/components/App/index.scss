@@ -1,0 +1,123 @@
+@use '../../styles/breakpoints' as bkp;
+
+
+.home-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.home-blur-container {
+    @include bkp.min-width-md {
+        padding: 30px;
+    }
+
+    @include bkp.min-width-lg {
+        padding: 50px 60px;
+    }
+
+    @include bkp.min-width-xl {
+        max-width: 1366px;
+        padding: 100px;
+        padding-bottom: 80px;
+        margin: auto;
+    }
+}
+
+.home-content-container {
+    position: relative;
+    padding: var(--content-space);
+    padding-bottom: 30px;
+
+    @include bkp.min-width-md {
+        padding: 30px;
+        padding-bottom: 50px;
+    }
+
+    @include bkp.min-width-lg {
+        padding: 30px 50px;
+        padding-bottom: 100px;
+    }
+
+    @include bkp.min-width-xl {
+        padding: 50px var(--content-space);
+        padding-bottom: 150px;
+    }
+}
+
+.home-copyright {
+    margin-top: 100px;
+
+    @include bkp.min-width-md {
+        display: none;
+    }
+}
+
+.home-footer {
+    display: none;
+
+    @include bkp.min-width-md {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    @include bkp.min-width-lg {
+        margin-top: 15px;
+    }
+
+    @include bkp.min-width-xl {
+        margin-top: 20px;
+    }
+}
+
+.home-footer-text {
+    padding: 5px 30px;
+    padding-bottom: 7px;
+}
+
+:root {
+    /* Font sizes */
+    --regular-font-size: 18px;
+    --primary-title-font-size: 34px;
+    --secondary-title-font-size: 24px;
+
+    /* Font weights */
+    --regular-font-weight: 400;
+    --medium-font-weight: 500;
+    --semi-bold-font-weight: 600;
+    --bold-font-weight: 700;
+
+    /* Colors */
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --background-color: rgb(218, 217, 216);
+
+    /* Text color */
+    --primary-text-color: var(--white);
+
+    /* Paddings */
+    --content-space: 24px;
+
+    /* Opacities */
+    --primary-text-opacity: 0.87;
+
+    @include bkp.min-width-md {
+        --primary-title-font-size: 44px;
+        --secondary-title-font-size: 22px;
+    }
+
+
+    @include bkp.min-width-lg {
+        --regular-font-size: 20px;
+        --primary-title-font-size: 54px;
+        --secondary-title-font-size: 30px;
+    }
+
+    @include bkp.min-width-lg {
+        --content-space: 100px;
+    }
+}

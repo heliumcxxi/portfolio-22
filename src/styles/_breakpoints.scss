@@ -1,0 +1,51 @@
+// medium screens
+@mixin min-width-md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+// large screens
+@mixin min-width-lg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+// extra large screens
+@mixin min-width-xl {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+//mobile-first breakpoints
+@mixin sm-size {
+    @media (min-width: 640px) {
+      @content;
+    }
+  }
+  
+  @mixin md-size {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin lg-size {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+  
+  @mixin xl-size {
+    @media (min-width: 1280px) {
+      @content;
+    }
+  }
+  
+  @mixin xxl-size {
+    @media (min-width: 1536px) {
+      @content;
+    }
+  }
