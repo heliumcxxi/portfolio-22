@@ -19,7 +19,7 @@
     }
 }
 
-//mobile-first breakpoints
+//lg guard
 @mixin sm-size {
     @media (min-width: 640px) {
       @content;
