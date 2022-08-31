@@ -1,14 +1,42 @@
+@use '../../styles/breakpoints' as bkp;
+
 .project-container{
   display: flex;
   justify-content: center;
   align-items: center;
+
+}
+
+.text-container{
+  width: 20%;
+  word-wrap:break-word;
 }
 
 .img-container{
-  width: 50%;
+  width: 60%;
   margin: 2rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 img{
   width: 100%;
+}
+
+.project-title{
+  font-size: 2rem;
+  margin-bottom: 3rem;
+
+}
+
+.project-desc{
+  font-size: 1.5rem;
+  padding-right: 2rem;
+}
+
+.project-desc-r{
+  font-size: 1.5rem;
+}
+
+.project-links.a{
+  gap: 1rem;
 }

@@ -19,7 +19,7 @@ export default function Projects() {
       <div className="projects-container">
         {projectList.map((project, idx) => {
           const isLeft = idx % 2 === 0;
-          console.log(isLeft);
+
           return <Project key={idx} project={project} isLeft={isLeft} />;
         })}
       </div>
