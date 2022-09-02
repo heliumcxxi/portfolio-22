@@ -42,7 +42,10 @@ export default function Intro() {
       <img className="image" src={iconImg} alt="" />
       <br />
       <a href="" target="_blank">
-        <button className="contact-btn">
+        <button
+          className="contact-btn"
+          onClick={() => (window.location = "mailto:bcclassic13@gmail.com")}
+        >
           <span>Contact Me</span>
         </button>
       </a>

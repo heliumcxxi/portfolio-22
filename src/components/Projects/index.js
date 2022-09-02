@@ -22,7 +22,9 @@ export default function Projects() {
         })}
       </div>
 
-      <button>Check Out More</button>
+      <button onClick={() => window.open("https://github.com/heliumcxxi")}>
+        Check Out More
+      </button>
     </div>
   );
 }
