@@ -12,7 +12,7 @@ export default function Intro() {
         Web Developer
       </h2>
       <p className="desc" data-aos="fade-left" data-aos-delay="450">
-        I work with test123
+        I work with
       </p>
       <div className="desc" data-aos="fade-up" data-aos-delay="500">
         <TypeAnimation
