@@ -3,7 +3,7 @@ import img1 from "../../assets/projects/project.png";
 
 const Project = ({ project, isLeft }) => {
   return isLeft ? (
-    <div className="project-container">
+    <div className="project-container-L">
       <div className="text-container">
         <div
           className="project-title"

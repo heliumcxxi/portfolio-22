@@ -1,21 +1,45 @@
 @use '../../styles/breakpoints' as bkp;
 
+.project-container-L{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+
+  @include bkp.min-width-md{
+    flex-direction: row;
+  }
+}
+
 .project-container{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
+  @include bkp.min-width-md{
+    flex-direction: row;
+  }
 }
 
 .text-container{
+  width: 80%;
+  padding: 2rem;
+
+  @include bkp.min-width-md{
   width: 20%;
-  word-wrap:break-word;
+  
+  }
 }
 
 .img-container{
-  width: 60%;
+  width: 85%;
   margin: 2rem;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+
+  @include bkp.min-width-md{
+  width: 60%;
+  }
 }
 
 .project-img{
@@ -24,24 +48,41 @@
 }
 
 .project-title{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+
+  @include bkp.min-width-md{
   font-size: 2rem;
   margin-bottom: 3rem;
-
+  }
 }
 
 .project-desc{
+  font-size: 1.3rem;
+  margin: 1rem;
+  padding: 1.3rem;
+
+  @include bkp.min-width-md{
   font-size: 1.5rem;
   padding-right: 2rem;
   margin-bottom: 0.5rem;
+  }
 }
 
 .project-desc-r{
+  font-size: 1.3rem;
+  margin: 1rem;
+  padding-bottom: 1.3rem;
+
+  @include bkp.min-width-md{
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  }
 }
 
 .project-links{
-  margin: 1rem auto;
+  margin: 1rem auto 0;
+  cursor: pointer;
 }
 
 a{
