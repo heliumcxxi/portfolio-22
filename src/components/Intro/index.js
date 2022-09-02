@@ -33,7 +33,6 @@ export default function Intro() {
             500,
           ]}
           //  Continuing previous Text
-          style={{ fontSize: "1rem" }}
           wrapper="p"
           repeat={Infinity} // Repeat this Animation Sequence infinitely
         />

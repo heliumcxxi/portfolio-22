@@ -22,7 +22,7 @@ export const projectData = [
   {
     title: "Calculator",
     description: "Desc",
-    technologies: "React, JavaScript, CSS",
+    technologies: "React, useReducer",
     image: calculator,
     demo: "https://heliumcxxi.github.io/cal-app-2/",
     github: "https://github.com/heliumcxxi/cal-app-2",

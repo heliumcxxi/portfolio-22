@@ -1,28 +1,51 @@
+@use '../../styles/breakpoints' as bkp;
+
 .content{
     text-align: center;
 }
 
 h1{
-    font-size: 2.5rem;
-    margin-top: 4rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding-top: 2rem;
+
+    @include bkp.min-width-md{
+        font-size: 2.5rem;
+    }
 }
 
 h2{
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 0.5rem;
+
+    @include bkp.min-width-md{
+        font-size: 1.5rem;
+    }
 }
 
 .desc{
     margin-top: 0.2rem;
+    font-size: 0.7rem;
+
+    @include bkp.min-width-md{
+        font-size: 1rem;
+    }
 }
 
 .contact-btn {
     background: linear-gradient(248.86deg, #e56ec996 10.51%, #2eb9c66f 93.41%);
     color: white;
     border: none;
+
+   
 }
 
 .image{
+    margin: 1rem;
+    width: 50%;
+
+    @include bkp.min-width-md{
     height:25%;
     width: 25%;
+    }
 }

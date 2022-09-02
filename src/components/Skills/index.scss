@@ -9,9 +9,13 @@
 
 .icon-container{
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin: 2rem auto;
     width: 80%;
+
+    @include bkp.min-width-md{
+        grid-template-columns: repeat(7, 1fr);
+    }
 }
 
 .icon-block{
@@ -29,7 +33,7 @@
 }
 
 .icon{
-    width: 50%;
+    width: 60%;
     margin: 0.8rem;
     
 
@@ -37,6 +41,4 @@
         width: 50%;
         margin: 1.5rem;
     }
-
-   
 }
