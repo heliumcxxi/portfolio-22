@@ -31,17 +31,17 @@ export default function Navbar() {
 
         <div className="menu-content-container">
           <div>
-            <div className="close-btn" onClick={() => setCloseMenu(true)}>
+            {/* <div className="close-btn" onClick={() => setCloseMenu(true)}>
               <RegularBtn>Close Menu</RegularBtn>
-            </div>
+            </div> */}
 
             <ul className="navbar-nav">
               <li className="nav-link">
-                <NavLink to="#about">About</NavLink>
+                <NavLink to="#projects">Projects</NavLink>
               </li>
 
               <li className="nav-link">
-                <NavLink to="#projects">Projects</NavLink>
+                <NavLink to="#about">About</NavLink>
               </li>
 
               <li className="nav-link">

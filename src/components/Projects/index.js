@@ -1,11 +1,9 @@
 import { useState } from "react";
 import "./index.scss";
-import projects from "../../data/projects.json";
+import { projectData } from "../../data/projects";
 import Project from "../Project";
 
 export default function Projects() {
-  const projectList = projects.projectData;
-
   return (
     <div className="section-container">
       <div
@@ -17,7 +15,7 @@ export default function Projects() {
       </div>
 
       <div className="projects-container">
-        {projectList.map((project, idx) => {
+        {projectData.map((project, idx) => {
           const isLeft = idx % 2 === 0;
 
           return <Project key={idx} project={project} isLeft={isLeft} />;

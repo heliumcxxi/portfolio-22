@@ -5,7 +5,7 @@ function CoverImage({ src }) {
     <div
       className="cover-image"
       style={{
-        backgroundImage: `url(${src})`,
+        backgroundImage: `linear-gradient(13deg, rgba(251, 226, 239, 0.3), rgba(226, 251, 250, 0.3)) ,url(${src})`,
       }}
     />
   );

@@ -6,6 +6,7 @@
     color: var(--primary-text-color);
     opacity: var(--primary-text-opacity);
     text-decoration: none;
+    margin: 1rem 0.3rem 0.5rem;
 
     @include bkp.min-width-md {
         font-size: 16px;

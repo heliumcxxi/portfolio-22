@@ -1,5 +1,10 @@
+@use './styles/breakpoints' as bkp;
+@import url(//db.onlinewebfonts.com/c/415c1cffdc1ffdf955cdd328ad4a4c87?family=Cheltenham);
+
 html {
   scroll-behavior: smooth;
+  font-family:'Courier New', Courier, monospace;
+  //  font-family: 'Cheltenham', Courier New, monospace;
 }
 
 *,
@@ -22,6 +27,49 @@ html {
 }
 
 
+:root {
+  /* Font sizes */
+  --regular-font-size: 18px;
+  --primary-title-font-size: 34px;
+  --secondary-title-font-size: 24px;
+
+  /* Font weights */
+  --regular-font-weight: 400;
+  --medium-font-weight: 500;
+  --semi-bold-font-weight: 600;
+  --bold-font-weight: 700;
+
+  /* Colors */
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --background-color: rgb(218, 217, 216);
+
+  /* Text color */
+  --primary-text-color: var(--black);
+
+  /* Paddings */
+  --content-space: 24px;
+
+  /* Opacities */
+  --primary-text-opacity: 0.87;
+
+  @include bkp.min-width-md {
+      --primary-title-font-size: 44px;
+      --secondary-title-font-size: 22px;
+  }
+
+
+  @include bkp.min-width-lg {
+      --regular-font-size: 20px;
+      --primary-title-font-size: 54px;
+      --secondary-title-font-size: 30px;
+  }
+
+  @include bkp.min-width-lg {
+      --content-space: 100px;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -38,9 +86,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: inherit;
-  font-weight: inherit;
-  color: inherit;
+  font: inherit;
 }
 
 a {
@@ -56,10 +102,17 @@ ul {
 
 button {
   font: inherit;
-  color: inherit;
-  background-color: unset;
-  padding: 0;
-  margin: 0;
-  border: unset;
   cursor: pointer;
+  color: black;
+  padding: 1rem;
+  margin: 1.5rem auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: all 0.2s  ease;
+  background-color: inherit;
+
+  &:hover{
+      transform: scale(0.98);
+      transition-duration: 0.2s;
+  }
 }

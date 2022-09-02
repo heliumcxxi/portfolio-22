@@ -10,6 +10,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Projects from "../Projects";
+import Skills from "../Skills";
 
 function App() {
   // For reveal animations
@@ -21,13 +22,13 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="app">
       <div className="home-bg">
         <CoverImage src={bgimg} />
       </div>
       <BlurContainer>
-        <Navbar />
         <Intro />
+        <Skills />
         <Projects />
       </BlurContainer>
     </div>

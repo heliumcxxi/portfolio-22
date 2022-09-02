@@ -1,0 +1,42 @@
+@use '../../styles/breakpoints' as bkp;
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 2rem auto;
+    width: 80%;
+}
+
+.icon-block{
+    border: 1px rgba(81, 72, 72, 0.3) solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    transition: all 0.3s ease;
+
+    &:hover{
+        transform: scale(0.9);
+    }
+}
+
+.icon{
+    width: 50%;
+    margin: 0.8rem;
+    
+
+    @include bkp.min-width-md{
+        width: 50%;
+        margin: 1.5rem;
+    }
+
+   
+}
