@@ -1,6 +1,6 @@
 # Portfolio Project
 
-A responsive portfolio built with React and hosted with [Netlify](https://www.netlify.com)
+A responsive portfolio built with React and hosted with [Vercel](https://vercel.com/)
 ![Portfolio screenshot](https://github.com/heliumcxxi/portfolioaug/blob/main/src/assets/screenshot.png)
 
 ## Protfolio Sections
