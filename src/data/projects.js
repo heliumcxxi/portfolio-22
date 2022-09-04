@@ -8,7 +8,7 @@ export const projectData = [
     description: "Desc",
     technologies: "React, NodeJS, Express, MongoDB, Stripe",
     image: ecommerce,
-    demo: "https://ecfrontend.vercel.app",
+    demo: "https://jquest.vercel.app",
     github: "https://github.com/heliumcxxi/ecfrontend",
   },
   {
