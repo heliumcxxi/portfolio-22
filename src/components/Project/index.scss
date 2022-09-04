@@ -60,7 +60,7 @@
 
 .project-desc{
   font-size: 1.3rem;
-  margin: 1rem;
+  margin: 1rem 0;
   padding: 1.3rem;
 
   @include bkp.min-width-lg{
@@ -73,7 +73,7 @@
 
 .project-desc-r{
   font-size: 1.3rem;
-  margin: 1rem;
+  margin: 1rem 0;
   padding-bottom: 1.3rem;
 
   @include bkp.min-width-lg{
