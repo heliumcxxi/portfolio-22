@@ -12,9 +12,9 @@ export const projectData = [
     github: "https://github.com/heliumcxxi/ecfrontend",
   },
   {
-    title: "To Do App with Calendar",
+    title: "MyNote",
     description: "Desc",
-    technologies: "React, React-Calendar",
+    technologies: "React, React-Calendar, useContext",
     image: calendar,
     demo: "https://heliumcxxi.github.io/to-do-3/",
     github: "https://github.com/heliumcxxi/to-do-3",
