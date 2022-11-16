@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./index.scss";
 import { projectData } from "../../data/projects";
 import Project from "../Project";

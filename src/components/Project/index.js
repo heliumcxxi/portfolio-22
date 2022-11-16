@@ -1,5 +1,4 @@
 import "./index.scss";
-import img1 from "../../assets/projects/project.png";
 
 const Project = ({ project, isLeft }) => {
   return isLeft ? (
@@ -17,6 +16,20 @@ const Project = ({ project, isLeft }) => {
           data-aos="fade-right"
           data-aos-delay="350"
         >
+          <p>Description</p>
+        </div>
+        <div
+          className="project-details"
+          data-aos="fade-left"
+          data-aos-delay="450"
+        >
+          <p>{project.description}</p>
+        </div>
+        <div
+          className="project-desc"
+          data-aos="fade-right"
+          data-aos-delay="350"
+        >
           <p>Technologies</p>
         </div>
         <div
@@ -24,19 +37,16 @@ const Project = ({ project, isLeft }) => {
           data-aos="fade-left"
           data-aos-delay="450"
         >
-          <p>
-            {/* <span>Technologies.</span>  */}
-            {project.technologies}
-          </p>
+          <p>{project.technologies}</p>
         </div>
 
         <div className="project-links" data-aos="fade-up" data-aos-delay="500">
           <a href={project.demo} target={project.demo} rel="">
             Demo
           </a>
-          <br />
+
           <a href={project.github} target={project.github} rel="">
-            Git repository
+            Repo
           </a>
         </div>
       </div>
@@ -63,6 +73,20 @@ const Project = ({ project, isLeft }) => {
           data-aos="fade-right"
           data-aos-delay="350"
         >
+          <p>Description</p>
+        </div>
+        <div
+          className="project-details"
+          data-aos="fade-left"
+          data-aos-delay="450"
+        >
+          <p>{project.description}</p>
+        </div>
+        <div
+          className="project-desc-r"
+          data-aos="fade-right"
+          data-aos-delay="350"
+        >
           <p>Technologies</p>
         </div>
         <div
@@ -70,19 +94,15 @@ const Project = ({ project, isLeft }) => {
           data-aos="fade-left"
           data-aos-delay="450"
         >
-          <p>
-            {/* <span>Technologies.</span>  */}
-            {project.technologies}
-          </p>
+          <p>{project.technologies}</p>
         </div>
 
         <div className="project-links" data-aos="fade-up" data-aos-delay="350">
           <a href={project.demo} target={project.demo} rel="">
             Demo
           </a>
-          <br />
           <a href={project.github} target={project.github} rel="">
-            Git repository
+            Repo
           </a>
         </div>
       </div>

@@ -1,11 +1,11 @@
-import calculator from "../assets/projects/product3.png";
-import calendar from "../assets/projects/product2.png";
-import ecommerce from "../assets/projects/product1.png";
+import blog from "../assets/projects/nextBlog.gif";
+import calendar from "../assets/projects/myNote.gif";
+import ecommerce from "../assets/projects/eCommerce.gif";
 
 export const projectData = [
   {
-    title: "eCommerce Website",
-    description: "Desc",
+    title: "Jewelry Quest",
+    description: "eCommerce platform prototype for a small boutique",
     technologies: "React, NodeJS, Express, MongoDB, Stripe",
     image: ecommerce,
     demo: "https://jquest.vercel.app",
@@ -13,18 +13,18 @@ export const projectData = [
   },
   {
     title: "MyNote",
-    description: "Desc",
-    technologies: "React, React-Calendar, useContext",
+    description: "Jot down everything at ease",
+    technologies: "React",
     image: calendar,
-    demo: "https://heliumcxxi.github.io/to-do-3/",
-    github: "https://github.com/heliumcxxi/to-do-3",
+    demo: "https://heliumcxxi.github.io/myNote",
+    github: "https://github.com/heliumcxxi/myNote",
   },
   {
-    title: "Calculator",
-    description: "Desc",
-    technologies: "React, useReducer",
-    image: calculator,
-    demo: "https://heliumcxxi.github.io/cal-app-2/",
-    github: "https://github.com/heliumcxxi/cal-app-2",
+    title: "Simple Blog",
+    description: "Quick and SSO friendly blog prototype",
+    technologies: "NextJS, GraphQL, Tailwind",
+    image: blog,
+    demo: "https://next-graphql-tailwind-blog.vercel.app",
+    github: "https://github.com/heliumcxxi/next-graphql-tailwind-blog",
   },
 ];
